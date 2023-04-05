@@ -26,8 +26,8 @@
             <span class="mall">Mall</span>
             <span class="portofolio" data-theme="text-dark">Portofolio</span>
         </div>
-        <label class="changeTheme">
-            <input type="checkbox" name="" id="">
+        <label class="changeTheme" data-theme="color-dark">
+            <input type="checkbox" name="">
             <div class="check" data-theme="color-light"></div>
         </label>
         <div class="menu">
@@ -37,7 +37,7 @@
         </div>
     </nav>
 
-    <header data-theme="style-background-gradient">
+    <header data-theme="style-background-gradient" id="up">
         <div class="judul" data-theme="text-dark">
             Lihat <br>Desain, Coding, dan <br>Semua Karya ku lainnya.
         </div>
@@ -434,11 +434,13 @@
             <span class="mall">Mall</span>
             <span class="portofolio" data-theme="text-dark">Portofolio</span>
         </div>
-        <a href="" data-theme="color-dark">Check This</a>
+        <a href="" data-theme="color-dark"><span data-theme="text-light">Check This</span></a>
         <span data-theme="text-dark">@copyright2023</span>
     </footer>
 
-
+    <a href="#up" class="slidetoHeader">
+        <i class="fa-solid fa-caret-up"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>

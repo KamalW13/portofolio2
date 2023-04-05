@@ -13,9 +13,10 @@ const indikator = document.querySelector('.changeTheme .check')
 const colorLight = document.querySelectorAll("[data-theme='color-light']");
 const colorLight2 = document.querySelectorAll("[data-theme='color-light-2']");
 const colorHeaderandFooter = document.querySelectorAll("[data-theme='style-background-gradient']");
+const textLight = document.querySelectorAll("[data-theme='text-light']");
 
 const textDark = document.querySelectorAll("[data-theme='text-dark']");
-const colorDark = document.querySelector("[data-theme='color-dark']")
+const colorDark = document.querySelectorAll("[data-theme='color-dark']")
 
 console.log(colorHeaderandFooter);
 
@@ -37,9 +38,19 @@ buttonTheme.addEventListener("click", () => {
             colorLight2[i].style.backgroundColor = `var(--background-dark)`;
         }
 
-        // Change Text (Light) Color to Mode Dark
+        // Change Color Dark for Mode Dark
+        for (let i = 0; i < colorDark.length; i++) {
+            colorDark[i].style.backgroundColor = `var(--background-light)`;
+        }
+
+        // Change Text (Dark => Light) from Mode Dark
         for (let i = 0; i < textDark.length; i++) {
             textDark[i].style.color = `var(--background-light)`;
+        }
+
+        // Change Text (Light => Dark) from Mode Dark
+        for (let i = 0; i < textLight.length; i++) {
+            textLight[i].style.color = `var(--background-dark-2)`;
         }
     } else {
 
@@ -59,10 +70,19 @@ buttonTheme.addEventListener("click", () => {
             colorLight2[i].style.backgroundColor = `var(--background-light-2)`;
         }
 
-
         // Change Text Color to Mode Light
         for (let i = 0; i < textDark.length; i++) {
             textDark[i].style.color = `var(--background-dark-2)`;
+        }
+
+        // Change Text (Light => Dark) from Mode Dark
+        for (let i = 0; i < colorDark.length; i++) {
+            colorDark[i].style.backgroundColor = `var(--background-dark-2)`;
+        }
+
+        // Change Text (Dark => Light) from Mode Dark
+        for (let i = 0; i < textLight.length; i++) {
+            textLight[i].style.color = `var(--background-light)`;
         }
     }
 })

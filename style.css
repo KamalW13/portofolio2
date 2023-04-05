@@ -55,7 +55,7 @@ nav{
 }
 
 nav .changeTheme{
-    background: linear-gradient(to right, var(--primary-gradient-1), var(--primary-gradient-2));
+    background-color: var(--background-dark-2);
     border-radius: 30px;
     width: 60px;
     padding: 3px;
@@ -472,6 +472,31 @@ footer span{
 }
 
 
+a.slidetoHeader{
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 5px 20px;
+    color: white;
+    position: fixed;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 2em;
+    right: 20px;
+    bottom: 30px;
+    box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.217),
+                inset -2px -2px 10px rgba(0, 0, 0, 0.217),
+                2px 2px 10px rgba(255, 255, 255, 0.217),
+                inset 2px 2px 10px rgba(255, 255, 255, 0.217);
+}
+
+a.slidetoHeader i{
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.603);
+}
+
+a.slidetoHeader:hover i{
+    transform: translateY(-7px);
+}
+
 
 
 @keyframes iconDesignMelayang {
@@ -582,4 +607,7 @@ footer span{
         transform: translateY(-10px);
     }
 
+    a.slidetoHeader{
+        bottom: 70px;
+    }
 }
