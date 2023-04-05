@@ -24,38 +24,38 @@
     <nav>
         <div class="icon">
             <span class="mall">Mall</span>
-            <span class="portofolio">Portofolio</span>
+            <span class="portofolio" data-theme="text-dark">Portofolio</span>
         </div>
-        <label class="changeTheme .lightTheme">
+        <label class="changeTheme">
             <input type="checkbox" name="" id="">
-            <div class="check"></div>
+            <div class="check" data-theme="color-light"></div>
         </label>
         <div class="menu">
-            <a href=""> Download CV </a>
-            <a href=""> About Me </a>
+            <a href="" data-theme="text-dark"> Download CV </a>
+            <a href="" data-theme="text-dark"> About Me </a>
             <a href="" class="contact"> Contact </a>
         </div>
     </nav>
 
-    <header>
-        <div class="judul">
+    <header data-theme="style-background-gradient">
+        <div class="judul" data-theme="text-dark">
             Lihat <br>Desain, Coding, dan <br>Semua Karya ku lainnya.
         </div>
-        <div class="deskripsi">
+        <div class="deskripsi" data-theme="text-dark">
             ini semua hanyalah kumpulan karya dari Kamal. <br>
             Lihat dan Nikmati. Kontak saya jika Anda Tertarik.
         </div>
         <div class="explore">
-            <a href="">
+            <a href="#tipe-karya">
                 <i class="fa-regular fa-compass"></i> EXPLORE
             </a>
         </div>
         <div class="gambar">
-            <div class="cycle-1 .lightTheme">
+            <div class="cycle-1" data-theme="color-light">
                 <img class="video" src="img/icon Video.png" alt="video">
                 <img class="design" src="img/icon Design.png" alt="design">
                 <img class="coding" src="img/icon coding.png" alt="coding">
-                <div class="cycle-2 .lightTheme"></div>
+                <div class="cycle-2"></div>
             </div>
         </div>
         <div class="info">
@@ -66,113 +66,113 @@
         </div>
     </header>
 
-    <div class="isi-content">
+    <div class="isi-content" id="tipe-karya" data-theme="color-light">
         <div class="tipe-karya">
-            <div class="judulKarya">Tipe Karya</div>
-            <div class="tipe">
-                <div class="cardtype graphic-design">
+            <div class="judulKarya" data-theme="text-dark">Tipe Karya</div>
+            <div class="tipe" data-theme="style-background-gradient">
+                <a href="#design" class="cardtype graphic-design" data-theme="color-light">
                     <div class="gambar"></div>
-                    <span>Graphic Design</span>
-                </div>
-                <div class="cardtype editing-video">
+                    <span data-theme="text-dark">Graphic Design</span>
+                </a>
+                <a href="#video" class="cardtype editing-video" data-theme="color-light">
                     <div class="gambar"></div>
-                    <span>Editing Video</span>
-                </div>
-                <div class="cardtype coding">
+                    <span data-theme="text-dark">Editing Video</span>
+                </a>
+                <a href="#coding" class="cardtype coding" data-theme="color-light">
                     <div class="gambar"></div>
-                    <span>Projek Latihan<br>Coding</span>
-                </div>
-                <div class="cardtype logo-animation">
+                    <span data-theme="text-dark">Projek Latihan<br>Coding</span>
+                </a>
+                <a href="#logo" class="cardtype logo-animation" data-theme="color-light">
                     <div class="gambar"></div>
-                    <span>Logo Animation</span>
-                </div>
+                    <span data-theme="text-dark">Logo Animation</span>
+                </a>
             </div>
         </div>
 
-        <div class="kumpulankarya coding">
+        <div class="kumpulankarya coding" id="coding">
             <div class="judulKarya">
                 <div class="line left"></div>
-                <span class="text">Projek Latihan Coding</span>
+                <span class="text" data-theme="text-dark">Projek Latihan Coding</span>
                 <div class="line right"></div>
             </div>
 
-            <div class="karyas">
+            <div class="karyas" data-theme="color-light-2">
                 <a href="https://kamalw13.github.io/Stumble-Guys/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/stumbleguys.jpg"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Website - Stumble Guys
                         </div>
                     </div>
                 </a>
 
                 <a href="https://kamalw13.github.io/portofolio/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/portofolio.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Portofolio V.01
                         </div>
                     </div>
                 </a>
 
                 <a href="https://kamalw13.github.io/linktree/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/linktree.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Linktree V.01
                         </div>
                     </div>
                 </a>
 
                 <a href="https://kamalw13.github.io/HTML-Email-Sertifikat/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/email.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             HTML Email - Template
                         </div>
                     </div>
                 </a>
 
                 <a href="https://kamalw13.github.io/pubg/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/pubg.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             PUBG | Website
                         </div>
                     </div>
                 </a>
 
                 <a href="https://kamalw13.github.io/Isometric3D/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/isometric3d.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Isometric 3D Hover
                         </div>
                     </div>
                 </a>
 
                 <a href="https://kamalw13.github.io/latihanProgate/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/projekProgate.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Projek Prograte
                         </div>
                     </div>
                 </a>
 
                 <a href="https://kamalw13.github.io/cardphoto/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/cardhover.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Hover Card Photo (Beta)
                         </div>
                     </div>
                 </a>
 
                 <a href="https://kamalw13.github.io/CV/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/latihanprogate2.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Latihan Home Page + CV (Beta)
                         </div>
                     </div>
@@ -180,18 +180,18 @@
 
 
                 <a href="https://kamalw13.github.io/library-online/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/libraryonline.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Library Online (Beta)
                         </div>
                     </div>
                 </a>
 
                 <a href="https://kamalw13.github.io/latihan.progate/" class="karya" target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Coding/latihanprogate.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Projek Progate (Beta)
                         </div>
                     </div>
@@ -206,19 +206,19 @@
             </div>
         </div>
 
-        <div class="kumpulankarya editing-video">
+        <div class="kumpulankarya editing-video" id="video">
             <div class="judulKarya">
                 <div class="line left"></div>
-                <span class="text">Editing Video</span>
+                <span class="text" data-theme="text-dark">Editing Video</span>
                 <div class="line right"></div>
             </div>
 
-            <div class="karyas">
+            <div class="karyas" data-theme="color-light-2">
                 <a href="https://www.instagram.com/reel/CoZ4WtOulsd/?utm_source=ig_web_copy_link" class="karya"
                     target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Video/bimbeljet.jpg"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Iklan Bimbel Jet
                         </div>
                     </div>
@@ -226,9 +226,9 @@
 
                 <a href="https://www.instagram.com/p/CbczrQ7JAtd/?utm_source=ig_web_copy_link" class="karya"
                     target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Video/trailergtr.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Trailer Event GTR-Fest 2022
                         </div>
                     </div>
@@ -236,9 +236,9 @@
 
                 <a href="https://www.instagram.com/p/Chb9MK-A0kN/?utm_source=ig_web_copy_link" class="karya"
                     target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Video/thisisus.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             This is Us | Remila
                         </div>
                     </div>
@@ -246,9 +246,9 @@
 
                 <a href="https://www.instagram.com/p/CftyyfCjM1a/?utm_source=ig_web_copy_link" class="karya"
                     target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Video/strukturbphremila.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Intro Struktur BPH Remila
                         </div>
                     </div>
@@ -256,9 +256,9 @@
 
                 <a href="https://www.instagram.com/p/CX1GnqJsjJz/?utm_source=ig_web_copy_link" class="karya"
                     target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Video/ldkremila2021.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             After Movie - LDK Remila 2021
                         </div>
                     </div>
@@ -266,9 +266,9 @@
 
                 <a href="https://www.instagram.com/p/Cd6-INIrRjt/?utm_source=ig_web_copy_link" class="karya"
                     target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Video/halalbihalalremila2022.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             After Movie - Halal bi Halal Remila 2022
                         </div>
                     </div>
@@ -276,9 +276,9 @@
 
                 <a href="https://www.instagram.com/reel/CqbbxA6jABi/?utm_source=ig_web_copy_link" class="karya"
                     target="_blank">
-                    <div class="card">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Video/trailerirama.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Event Trailer - IRAMA
                         </div>
                     </div>
@@ -293,79 +293,79 @@
             </div>
         </div>
 
-        <div class="kumpulankarya graphic-design">
+        <div class="kumpulankarya graphic-design" id="design">
             <div class="judulKarya">
                 <div class="line left"></div>
-                <span class="text">Design Graphic</span>
+                <span class="text" data-theme="text-dark">Design Graphic</span>
                 <div class="line right"></div>
             </div>
 
-            <div class="karyas">
+            <div class="karyas" data-theme="color-light-2">
                 <a href="https://www.instagram.com/p/CoIL-v4yvs8/?utm_source=ig_web_copy_link" class="karya"
-                    target="_blank">
-                    <div class="card">
+                    target="_blank" data-theme="color-light">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Desain/miladjprmi.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Juara 1 - Lomba Poster <br> Milad JPRMI
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/p/CoR7i2qylXT/?utm_source=ig_web_copy_link" class="karya"
-                    target="_blank">
-                    <div class="card">
+                    target="_blank" data-theme="color-light">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Desain/gooddaylabel.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Good Day Label
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/p/CoNJKuihkqE/?utm_source=ig_web_copy_link" class="karya"
-                    target="_blank">
-                    <div class="card">
+                    target="_blank" data-theme="color-light">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Desain/raimunaranting.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Juara 1 - Lomba Desain Logo <br> Raimuna Ranting
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/p/CoJVX5GSWz6/?utm_source=ig_web_copy_link" class="karya"
-                    target="_blank">
-                    <div class="card">
+                    target="_blank" data-theme="color-light">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Desain/redream.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Desain Logo <br> Redream Production
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/p/CoIPHCqScAC/?utm_source=ig_web_copy_link" class="karya"
-                    target="_blank">
-                    <div class="card">
+                    target="_blank" data-theme="color-light">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Desain/yafim.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Desain Logo <br> Yayasan Al Fatih Insani Mulia
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/p/CoMjm-jBbC0/?utm_source=ig_web_copy_link" class="karya"
-                    target="_blank">
-                    <div class="card">
+                    target="_blank" data-theme="color-light">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Desain/rcg.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Desain Logo Event <br> Remila Cyber Game
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/p/CoILQ7RS0ZC/?utm_source=ig_web_copy_link" class="karya"
-                    target="_blank">
-                    <div class="card">
+                    target="_blank" data-theme="color-light">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/Desain/poster.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Poster Quotes X Anime
                         </div>
                     </div>
@@ -381,39 +381,39 @@
             </div>
         </div>
 
-        <div class="kumpulankarya logo-animation">
+        <div class="kumpulankarya logo-animation" id="logo">
             <div class="judulKarya">
                 <div class="line left"></div>
-                <span class="text">Logo Animation</span>
+                <span class="text" data-theme="text-dark">Logo Animation</span>
                 <div class="line right"></div>
             </div>
 
-            <div class="karyas">
+            <div class="karyas" data-theme="color-light-2">
                 <a href="https://www.instagram.com/reel/CqZzuUkroWK/?utm_source=ig_web_copy_link" class="karya"
-                    target="_blank">
-                    <div class="card">
+                    target="_blank" data-theme="color-light">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/LogoAnimation/remila2.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Remila V.02
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/reel/CqXbTHNLynV/?utm_source=ig_web_copy_link" class="karya"
-                    target="_blank">
-                    <div class="card">
+                    target="_blank" data-theme="color-light">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/LogoAnimation/rcg.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             Remila Cyber Game
                         </div>
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/reel/CqXf8N-MnuT/?utm_source=ig_web_copy_link" class="karya"
-                    target="_blank">
-                    <div class="card">
+                    target="_blank" data-theme="color-light">
+                    <div class="card" data-theme="color-light">
                         <div class="thumb" data-thumbnail="img/LogoAnimation/ybmpln.png"></div>
-                        <div class="judulthumb">
+                        <div class="judulthumb" data-theme="text-dark">
                             YBM PLN
                         </div>
                     </div>
@@ -429,13 +429,13 @@
         </div>
     </div>
 
-    <footer>
+    <footer data-theme="style-background-gradient">
         <div class="logoFooter">
             <span class="mall">Mall</span>
-            <span class="portofolio">Portofolio</span>
+            <span class="portofolio" data-theme="text-dark">Portofolio</span>
         </div>
-        <a href="">Check This</a>
-        <span>@copyright2023</span>
+        <a href="" data-theme="color-dark">Check This</a>
+        <span data-theme="text-dark">@copyright2023</span>
     </footer>
 
 

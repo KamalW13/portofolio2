@@ -3,6 +3,11 @@
     padding: 0;
     font-family: 'Urbanist', sans-serif;
     text-decoration: none;
+    transition: .2s ease-in;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -19,14 +24,12 @@
     /* Dark Theme */
     --background-dark: #333333;
     --background-dark-2: #292929;
-    --background-gradient-1-dark: #3B3339;
-    --background-gradient-2-dark: #38342E;
 
     --style-button-1: linear-gradient(to right, var(--primary-gradient-1), var(--primary-gradient-2));
     --style-button-2: linear-gradient(to right, var(--primary-gradient-1), var(--primary-gradient-3));
 
     --style-background-gradient: linear-gradient(47deg, var(--background-gradient-1-light), var(--background-gradient-2-light));
-
+    --style-background-gradient-dark: linear-gradient(47deg, #442138,#3b3326);
 }
 
 nav{
@@ -59,6 +62,8 @@ nav .changeTheme{
     position: absolute;
     left: 45vw;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 
 nav input{
@@ -66,11 +71,17 @@ nav input{
     position: absolute;
 }
 
+nav input[type="checkbox"]:checked ~ .check{
+    transform: translateX(15px);
+}
+
 nav .check{
     width: 25px;
     height: 25px;
     background-color: white;
     border-radius: 50%;
+    transform: translateX(-15px);
+    transition: .3s ease-in-out;
 }
 
 nav .menu a{
@@ -97,6 +108,7 @@ header{
     height: 100vh;
     box-sizing: border-box;
     position: relative;
+    transition: .3s;
 }
 
 header .info{
@@ -129,7 +141,8 @@ header .info .txt i{
 
 .deskripsi{
     grid-area: deskripsi;
-    color: #666;
+    color: var(--background-dark-2);
+    opacity: .8;
     height: max-content;
     transform: translateY(-40px);
 }
@@ -247,6 +260,7 @@ header .info .txt i{
     min-width: 200px;
     border-radius: 30px;
     cursor: pointer;
+    color: black
 }
 
 .tipe .cardtype:hover .gambar{
@@ -296,7 +310,7 @@ header .info .txt i{
 
 .judulKarya .text{
     width: max-content;
-    background-color: var(--background-light);
+    background-color: transparent;
     padding: 0 100px;
 }
 
@@ -446,7 +460,7 @@ footer .logoFooter{
 }
 
 footer a{
-    background-color: var(--background-gradient-1-dark);
+    background-color: #3B3339;
     color: white;
     padding: 5px 20px;
     border-radius: 7px;
