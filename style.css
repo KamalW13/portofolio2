@@ -584,7 +584,7 @@ label.modedarkmobile input[type="checkbox"]:checked ~ .indicator i.fa-sun{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     body{ overflow-x: hidden;}
     /* *{border: 1px solid black;} */
     nav { display: none;}
